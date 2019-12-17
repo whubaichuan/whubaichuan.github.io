@@ -1,2 +1,2 @@
 # whubaichuan.github.io
-My Website
+Welcome to Baichuan's Website :)
