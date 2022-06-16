@@ -98,92 +98,6 @@
     </section>
 
 
-    <section class="section" id="carousel">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-two-thirds">
-            
-            <!-- Start Carousel Section -->
-            <section class="section has-carousel" style="padding: 0">
-              <div id="carousel-results" class="carousel">
-
-                <!-- start carousel item list -->
-                <div class="item-1">
-                  <figure class="image is-9by16">
-                    <video class="has-ratio" muted controls loop autoplay>
-                      <source src="videos/carousel/ayush_color.mp4" type="video/mp4" width="100%" height="100%">
-                        "Your browser does not support the video tag"
-                    </video>
-                  </figure>
-                </div>
-
-                <div class="item-2">
-                  <figure class="image is-9by16">
-                    <video class="has-ratio" muted controls loop autoplay>
-                      <source src="videos/carousel/ayush_depth.mp4" type="video/mp4" width="100%" height="100%">
-                        "Your browser does not support the video tag"
-                    </video>
-                  </figure>
-                </div>
-
-                <div class="item-2">
-                  <figure class="image is-9by16">
-                    <video class="has-ratio" muted controls loop autoplay>
-                      <source src="videos/carousel/ayush_balls.mp4" type="video/mp4" width="100%" height="100%">
-                        "Your browser does not support the video tag"
-                    </video>
-                  </figure>
-                </div>
-
-                <div class="item-6">
-                  <figure class="image is-9by16">
-                    <video class="has-ratio" muted controls loop autoplay>
-                      <source src="videos/carousel/ayush_snow.mp4" type="video/mp4" width="100%" height="100%">
-                        "Your browser does not support the video tag"
-                    </video>
-                  </figure>
-                </div>
-
-
-                <div class="item-4">
-                  <figure class="image is-9by16">
-                    <video class="has-ratio" muted controls loop autoplay>
-                      <source src="videos/carousel/ayush_cyberpunk.mp4" type="video/mp4" width="100%" height="100%">
-                        "Your browser does not support the video tag"
-                    </video>
-                  </figure>
-                </div>
-
-                <div class="item-3">
-                  <figure class="image is-9by16">
-                    <video class="has-ratio" muted controls loop autoplay>
-                      <source src="videos/carousel/ayush_cubes.mp4" type="video/mp4" width="100%" height="100%">
-                        "Your browser does not support the video tag"
-                    </video>
-                  </figure>
-                </div>
-
-                <div class="item-5">
-                  <figure class="image is-9by16">
-                    <video class="has-ratio" muted controls loop autoplay>
-                      <source src="videos/carousel/ayush_firebois.mp4" type="video/mp4" width="100%" height="100%">
-                        "Your browser does not support the video tag"
-                    </video>
-                  </figure>
-                </div>
-
-                <!-- end carousel item list -->
-
-              </div>
-            </section>
-            <!-- End Carousel Section -->
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
     <section class="section" id="Overview-Video">
       <div class="container">
         <div class="columns is-centered">
@@ -207,76 +121,23 @@
             <h2 class="title is-3">Abstract</h2>
 
             <p>
-              We present an algorithm for reconstructing dense, geometrically consistent depth for all pixels in a monocular video.
-              We leverage a conventional structure-from-motion reconstruction to establish geometric constraints on pixels in the video.
-              Unlike the ad-hoc priors in classical reconstruction, we use a learning-based prior, i.e., a convolutional neural network trained for single-image depth estimation.
-              At test time, we fine-tune this network to satisfy the geometric constraints of a particular input video, while retaining its ability to synthesize plausible depth details in parts of the video that are less constrained.
-              We show through quantitative validation that our method achieves higher accuracy and a higher degree of geometric consistency than previous monocular reconstruction methods.
-              Visually, our results appear more stable.
-              Our algorithm is able to handle challenging hand-held captured input videos with a moderate degree of dynamic motion.
-              The improved quality of the reconstruction enables several applications, such as scene reconstruction and advanced video-based visual effects.
+              Epilepsy is a mental disease that affects more than 65 million people, around 1% of the human on the earth. 
+              The medical monitoring system, mainly based on the international 10-20 system with a negative effect on social stigma, 
+              is used to detect the onset of a seizure and call for some first-aid help due to the drug resistance. 
+              To develop a high-performing seizure detection algorithm, deep learning technology is introduced to extract the potential features among EEG signals nowadays. 
+              But training a deep neural network need lots of data, especially the seizure data. For a real new patient, how can we construct a patient-specific seizure detection system quickly and effectively is a pressing issue that needs to be addressed. 
+              In this paper, we propose a firstly end-to-end real unsupervised network, called EpilepsyNet, without any need for seizure data. Especially, records of non-seizure data in only 20 minutes on our e-glass system are enough for EpilepsyNet's training and testing. 
+              Our experiments in CHB-MIT dataset show that our generated seizure data has comparable detection results, the geometric mean of 78\%, as the real seizure data. 
+              EpilepsyNet is a powerful solution for continuous and non-invasive seizure detection, especially for the new patients without any seizure data recorded.
             </p>
 
-            <img src="images/overview.png">
+            <img src="image/network.png">
           </div>
         </div>
       </div>
     </section>
 
 
-    <section class="section" id="results">
-      <div class="container content">
-        <div class="columns is-centered">
-          <div class="column is-two-thirds has-text-justified">
-            <h2 class="title is-3">Results</h2>
-
-            <div class="tile is-ancestor is-vertical">
-              <div class="tile is-parent">
-                <div class="tile is-child has-text-vcentered">
-                  <video muted controls loop width="100%">
-                    <source src="videos/results/dog_color_depth.mp4" type="video/mp4">
-                      "Your browser does not support the video tag"
-                  </video>
-                </div>
-
-                <div class="tile is-child has-text-vcentered">
-                  <video muted controls loop width="100%">
-                    <source src="videos/results/family_color_depth.mp4" type="video/mp4">
-                      "Your browser does not support the video tag"
-                  </video>
-                </div>
-              </div>
-
-              <div class="tile is-parent">
-                <div class="tile is-child has-text-vcentered">
-                  <video muted controls loop width="100%">
-                    <source src="videos/results/cat_color_depth.mp4" type="video/mp4">
-                      "Your browser does not support the video tag"
-                  </video>
-                </div>
-
-                <div class="tile is-child has-text-vcentered">
-                  <video muted controls loop width="100%">
-                    <source src="videos/results/boy_color_depth.mp4" type="video/mp4">
-                      "Your browser does not support the video tag"
-                  </video>
-                </div>
-              </div>
-              
-              <div class="tile is-parent">
-                <div class="tile is-child has-text-vcentered">
-                  <video muted controls loop width="100%">
-                    <source src="videos/results/river_color_depth.mp4" type="video/mp4">
-                      "Your browser does not support the video tag"
-                  </video>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
 
