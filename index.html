@@ -66,63 +66,122 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle">
-              <img style="width:100%;max-width:100%" src="project/M3VSNet/image/mvs.png" alt="Unsup_MVS" class="hoverZoomLink">
+          <tr onmouseout="mvs_stop()" onmouseover="mvs_start()">
+            <td style="padding:10pt;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mvs_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/mvs.mov" type="video/mp4" >
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/mvs.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function mvs_start() {
+                  document.getElementById('mvs_image').style.opacity = "1";
+                }
+  
+                function mvs_stop() {
+                  document.getElementById('mvs_image').style.opacity = "0";
+                }
+                mvs_stop()
+              </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:10px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2004.09722v2">
                 <papertitle>M<sup>3</sup>VSNet: Unsupervised Multi-metric Multi-view Stereo Network</papertitle>
               </a>
               <br>
-              <strong>Baichuan Huang</strong>, Hongwei Yi, Can Huang, Yijia He, Jingbin Liu, Xiao Liu
+              <strong>Baichuan Huang</strong>, <a href="https://xyyhw.top/">Hongwei Yi</a>, Can Huang, <a href="https://dblp.org/pid/195/8944.html">Yijia He</a>, Jingbin Liu, <a href="http://liuxiao.org/aboutme/">Xiao Liu</a>
               <br>
               Accepted by <a href="https://www.2021.ieeeicip.org/www.2021.ieeeicip.org/index.html">IEEE ICIP 2021</a>(<a href="project/M3VSNet/video.html"> video</a>|<a href="data/poster.pdf"> poster</a>|<a href="data/attendance.pdf"> attendance</a>)
               <br>
               <a href="data/M3VSNet.pdf">paper</a>/
               <a href="https://github.com/whubaichuan/M3VSNet">code</a>/
               <a href="data/MVSNet.pdf">supplement</a>/
+              <p>
+                This method establishes the state-of-the-arts unsupervised MVS method and demonstrates the powerful generalization ability.
+              </p>
             </td>
         </tr>
 
 
 
-          <tr>
-              <td style="padding:2.5%;width:25%;vertical-align:middle">
-                <img style="width:100%;max-width:100%" src="images/v3.png" alt="Survey of SLAM" class="hoverZoomLink">
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+        <tr onmouseout="slam_stop()" onmouseover="slam_start()">
+          <td style="padding:10pt;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='slam_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/slam.mov" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/slam.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function slam_start() {
+                document.getElementById('slam_image').style.opacity = "1";
+              }
+
+              function slam_stop() {
+                document.getElementById('slam_image').style.opacity = "0";
+              }
+              slam_stop()
+            </script>
+          </td>
+
+              <td style="padding:10px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/1909.05214v4">
                   <papertitle>A Survey of Simultaneous Localization and Mapping with an Envision in 6G Wireless Networks</papertitle>
                 </a>
                 <br>
-                <strong>Baichuan Huang</strong>, Jun Zhao, Jingbin Liu
+                <strong>Baichuan Huang</strong>, <a href="https://junzhaogroupntu.github.io/">Jun Zhao</a>, Jingbin Liu
                 <br>
                 <em>Journal of Global Positioning Systems </em>, 2021
                 <br>
                 <a href="data/JoGPS_v17_Issue2.pdf">paper</a>/
                 <a href="https://github.com/whubaichuan/A_Survey_of_SLAM">project</a>/
+                <p>
+                  The paper makes an overview in SLAM including Lidar SLAM, visual SLAM, and their fusion. 
+                </p>
               </td>
           </tr>
 
-          <tr>
-              <td style="padding:2.5%;width:25%;vertical-align:middle">
-                <img style="width:100%;max-width:100%" src="images/Sensors.png" alt="BLE Localziation" class="hoverZoomLink">
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+          <tr onmouseout="ble_stop()" onmouseover="ble_start()">
+            <td style="padding:10pt;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ble_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/ble.mov" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/ble.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ble_start() {
+                  document.getElementById('ble_image').style.opacity = "1";
+                }
+
+                function ble_stop() {
+                  document.getElementById('ble_image').style.opacity = "0";
+                }
+                ble_stop()
+              </script>
+            </td>
+            
+              <td style="padding:10px;width:75%;vertical-align:middle">
                 <a href="https://www.mdpi.com/1424-8220/19/16/3487">
                   <papertitle>A Robust Indoor Positioning Method based on Bluetooth Low Energy with Separate Channel Information</papertitle>
                 </a>
                 <br>
-                <strong>Baichuan Huang</strong>, Jingbin Liu, Wei Sun, Fan Yang
+                <strong>Baichuan Huang</strong>, Jingbin Liu, Wei Sun, <a href="http://faculty.hust.edu.cn/YANGFAN/zh_CN/index.htm">Fan Yang</a>
                 <br>
                 <em>Sensors</em>, 2019
                 <br>
                 <a href="data/Sensors.pdf">paper</a>
+                <p>
+                  To improve the adaptability and robustness of the BLE positioning system, we propose making full use of the three separate channels instead of their combination.
+                </p>
               </td>
           </tr>
 
-          <tr>
+          <!--<tr>
               <td style="padding:2.5%;width:25%;vertical-align:middle">
                 <img style="width:100%;max-width:100%" src="images/AOA.png" alt="AOA" class="hoverZoomLink">
               </td>
@@ -139,8 +198,44 @@
                 <p>Jingbin Liu is the supervisor.
                   </p>
               </td>
-          </tr>
+          </tr>-->
 
+          <tr onmouseout="aoa_stop()" onmouseover="aoa_start()">
+            <td style="padding:10pt;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='aoa_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/AOA.mov" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/AOA.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function aoa_start() {
+                  document.getElementById('aoa_image').style.opacity = "1";
+                }
+
+                function aoa_stop() {
+                  document.getElementById('aoa_image').style.opacity = "0";
+                }
+                aoa_stop()
+              </script>
+            </td>
+
+            <td style="padding:10px;width:75%;vertical-align:middle">
+              <a href="http://ch.whu.edu.cn/CN/abstract/abstract6304.shtml">
+                <papertitle>AOA Estimation Based on Channel State Information Extracted from WiFi with Double Antenna</papertitle>
+              </a>
+              <br>
+              Jingbin Liu, <strong>Baichuan Huang</strong>, Bin Zhang
+              <br>
+              <em>GEOMATICS AND INFORMATION SCIENCE OF WUHAN UNIVERS</em>, 2018
+              <br>
+              <a href="data/AOA.pdf">paper</a>
+              <p>This paper uses two virtual antennas to realize the music algorithm (Angle of Arrival) based on channel state information (CSI).
+                </p>
+            </td>
+
+          </tr>
           <!-- <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle">
               <img style="width:100%;max-width:100%" src="images/Measure.png" alt="Measure" class="hoverZoomLink">
@@ -367,10 +462,15 @@
             <heading>Professional Service</heading>
             <p>
             <strong>Teaching Duty: </strong>: <br>
-            Machine Learning for Internet of Things (IoT) (<a href="https://kurser.lth.se/lot/course/EITP40">EITP40</a>)<br>
+            Machine Learning for Internet of Things (IoT) (<a href="https://kurser.lth.se/lot/course/EITP40">EITP40</a>)<br><br>
             <strong>Reviewer: </strong>: <br>
             IEEE International Conference on Image Processing (<a href="https://www.2021.ieeeicip.org/www.2021.ieeeicip.org/index.html">ICIP'21</a>)<br>
-            AAAI Conference on Artificial Intelligence (<a href="https://aaai.org/Conferences/AAAI-21/">AAAI'21</a>)
+            AAAI Conference on Artificial Intelligence (<a href="https://aaai.org/Conferences/AAAI-21/">AAAI'21</a>)<br><br>
+
+            <strong>Patents: </strong>: <br>
+            A high quality precision panoramic imaging system and method based on the DSLR camera (<a href="data/patent_1.pdf">ZL 2019 1 0123353.3</a>) <br>
+            An intelligent inspection robot and intelligent inspection method for underground pipelines (<a href="data/patent_2.pdf">ZL 2019 1 0375732.1</a>) <br>
+            
             </p>
           </td>
         </tr>
@@ -397,11 +497,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Others</heading>
               <p>
-              <strong>Patents: </strong>: <br>
-              A high quality precision panoramic imaging system and method based on the DSLR camera (<a href="data/patent_1.pdf">ZL 2019 1 0123353.3</a>) <br>
-		          An intelligent inspection robot and intelligent inspection method for underground pipelines (<a href="data/patent_2.pdf">ZL 2019 1 0375732.1</a>) <br>
-              <br>
-              <br>
+
               I like Billiards, swimming and running.
 			         <!--I have a WeChat Official Account <a href="images/Wechat.jpg">Baichuan_share</a> and <a href="https://www.zhihu.com/people/huangbaichuanwhu/activities">Zhihu</a> -->
               </p>
