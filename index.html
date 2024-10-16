@@ -33,7 +33,7 @@
                 <name>Baichuan Huang</name>
               </p> -->
               <p>
-                I am a Ph.D. student in the <a href="https://www.eit.lth.se/">Department of Electrical and Information Technology</a>, <a href="https://www.lth.se/english/">LTH</a>, at Lund University (Sweden), working with <a href="https://www.eit.lth.se/staff/amir.aminifar">Asst. Prof. Amir Aminifar</a>. I got my master's degree, working with <a href="https://www.linkedin.com/in/jingbin-liu-5b68011b/">Prof. Jingbin Liu</a> in the <a href="http://www.lmars.whu.edu.cn/en">State Key Laboratory of LIESMARS</a> at Wuhan University, China. Before that, I received my bachelor's degree in electronic information engineering from the <a href="http://eis.whu.edu.cn/indexone.shtml">Electronic Information School</a> at Wuhan University. My research interests are intelligent perception, The Internet of Things (IoT), mobile health, and edge AI.
+                I am a Ph.D. student in the <a href="https://www.eit.lth.se/">Department of Electrical and Information Technology</a>, <a href="https://www.lth.se/english/">LTH</a>, at Lund University (Sweden), working with <a href="https://www.eit.lth.se/staff/amir.aminifar">Asst. Prof. Amir Aminifar</a>. I got my master's degree, working with <a href="https://www.linkedin.com/in/jingbin-liu-5b68011b/">Prof. Jingbin Liu</a> in the <a href="http://www.lmars.whu.edu.cn/en">State Key Laboratory of LIESMARS</a> at Wuhan University, China. Before that, I received my bachelor's degree in electronic information engineering from the <a href="http://eis.whu.edu.cn/">Electronic Information School</a> at Wuhan University. My research interests are intelligent perception, The Internet of Things (IoT), mobile health, and edge AI.
               </p>
 
               <p>
@@ -66,7 +66,7 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
          
-          <td style="padding:2.5%;width:25%;vertical-align:middle">
+          <!-- <td style="padding:2.5%;width:25%;vertical-align:middle">
             <img style="width:100%;max-width:100%" src="images/LightFF.png" alt="AOA" class="hoverZoomLink">
           </td>
           <td style="padding:10px;width:75%;vertical-align:middle">
@@ -74,7 +74,7 @@
               <papertitle>LightFF: Lightweight Inference for Forward-Forward Algorithm</papertitle>
             </a>
             <br>
-            <a href="https://aminaminifar.github.io/info/">Amin Aminifar*</a>, <strong>Baichuan Huang*</strong>, Azra Abtahi, Amir Aminifar
+            <a href="https://aminaminifar.github.io/info/">Amin Aminifar*</a>, <strong>Baichuan Huang*</strong>, Azra Abtahi, Amir Aminifar (<em>*Equal contribution</em>)
             <br>
             Accepted by <a href="https://www.ecai2024.eu/">ECAI-2024</a> (Acceptance Rate: 23%)
             <br> 
@@ -82,13 +82,51 @@
             <a href="https://github.com/AminAminifar/LightFF">code</a>
   
             <p>
-            We propose a lightweight inference scheme specifically designed for DNNs trained using the Forward-Forward algorithm ( Contribute to the official Forward-Forward <a href="https://github.com/loeweX/Forward-Forward"> repository </a> ).
+            We propose a lightweight inference scheme specifically designed for DNNs trained using the Forward-Forward algorithm ( Contribute to the Forward-Forward <a href="https://github.com/loeweX/Forward-Forward"> repository </a> ).
             </p>
             
-            <p><em>*Equal contribution.</em>
-              </p>
-          </td>
 
+          </td> -->
+
+          <tr onmouseout="ecai_stop()" onmouseover="ecai_start()">
+            <td style="padding:10pt;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ecai_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/LightFF.MOV" type="video/mp4" >
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/LightFF.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ecai_start() {
+                  document.getElementById('ecai_image').style.opacity = "1";
+                }
+  
+                function ecai_stop() {
+                  document.getElementById('ecai_image').style.opacity = "0";
+                }
+                ecai_stop()
+              </script>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+              
+              <a href="https://arxiv.org/abs/2404.05241v6">
+                <papertitle>LightFF: Lightweight Inference for Forward-Forward Algorithm</papertitle>
+              </a>
+              <br>
+              <a href="https://aminaminifar.github.io/info/">Amin Aminifar*</a>, <strong>Baichuan Huang*</strong>, Azra Abtahi, Amir Aminifar (<em>*Equal contribution</em>)
+              <br>
+              Accepted by <a href="https://www.ecai2024.eu/">ECAI-2024</a> (Acceptance Rate: 23%)
+              <br> 
+              <a href="data/2404.05241v6.pdf">paper</a>/ 
+              <a href="https://github.com/AminAminifar/LightFF">code</a>
+    
+              <p>
+              We propose a lightweight inference scheme specifically designed for DNNs trained using the Forward-Forward algorithm ( Contribute to the Forward-Forward <a href="https://github.com/loeweX/Forward-Forward"> repository </a> ).
+              </p>
+              
+            </td>
+        </tr>
 
           <tr onmouseout="aicas_stop()" onmouseover="aicas_start()">
             <td style="padding:10pt;width:25%;vertical-align:middle">
