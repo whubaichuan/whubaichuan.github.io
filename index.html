@@ -110,29 +110,63 @@
             
 
           </td> -->
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle">
-              <img style="width:100%;max-width:100%" src="images/AAAI.png" alt="AAAI" class="hoverZoomLink">
-            </td>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://aaai.org/conference/aaai/aaai-25/">
-                <papertitle>TinyFoA: Memory Efficient Forward-Only Algorithm for On-Device Learning</papertitle>
-              </a>
-              <br>
-              <strong>Baichuan Huang</strong>, Amir Aminifar
-              <br>
-              Accepted by <a href="https://aaai.org/conference/aaai/aaai-25/">AAAI-2025</a> (<u>Acceptance Rate: 23.4%</u>)
-              <br>
-              <a href="https://github.com/whubaichuan/TinyFoA">code</a>
-              <p>
-                We propose a memory-efficient forward-only algorithm called TinyFoA, to reduce dynamic memory overhead in the training process. 
-              </p>
-            </td>
-        </tr>
 
-        <tr>
-          <td style="padding:2.5%;width:25%;vertical-align:middle">
-            <img style="width:100%;max-width:100%" src="images/TCASAI.png" alt="TCASAI" class="hoverZoomLink">
+
+        <tr onmouseout="aaai_stop()" onmouseover="aaai_start()">
+          <td style="padding:10pt;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='aaai_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/AAAI.MOV" type="video/mp4" >
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/AAAI.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function aaai_start() {
+                document.getElementById('aaai_image').style.opacity = "1";
+              }
+
+              function aaai_stop() {
+                document.getElementById('aaai_image').style.opacity = "0";
+              }
+              aaai_stop()
+            </script>
+          </td>
+          <td style="padding:10px;width:75%;vertical-align:middle">
+            <a href="https://aaai.org/conference/aaai/aaai-25/">
+              <papertitle>TinyFoA: Memory Efficient Forward-Only Algorithm for On-Device Learning</papertitle>
+            </a>
+            <br>
+            <strong>Baichuan Huang</strong>, Amir Aminifar
+            <br>
+            Accepted by <a href="https://aaai.org/conference/aaai/aaai-25/">AAAI-2025</a> (<u>Acceptance Rate: 23.4%</u>)
+            <br>
+            <a href="https://github.com/whubaichuan/TinyFoA">code</a>
+            <p>
+              We propose a memory-efficient forward-only algorithm called TinyFoA, to reduce dynamic memory overhead in the training process. 
+            </p>
+          </td>
+      </tr>
+
+        <tr onmouseout="tcasai_stop()" onmouseover="tcasai_start()">
+          <td style="padding:10pt;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='tcasai_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/TCASAI.MOV" type="video/mp4" >
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/TCASAI.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function tcasai_start() {
+                document.getElementById('tcasai_image').style.opacity = "1";
+              }
+
+              function tcasai_stop() {
+                document.getElementById('tcasai_image').style.opacity = "0";
+              }
+              tcasai_stop()
+            </script>
           </td>
           <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://ieeexplore.ieee.org/document/10746864">
@@ -149,7 +183,8 @@
              We propose an energy-aware NAS framework for distributed IoT, aiming to search for distributed DNNs to maximize prediction performance subjected to Flash Memory (Flash), Random-access Memory (RAM), and energy constraints. 
             </p>
           </td>
-        </tr>
+      </tr>
+
 
           <tr onmouseout="ecai_stop()" onmouseover="ecai_start()">
             <td style="padding:10pt;width:25%;vertical-align:middle">
