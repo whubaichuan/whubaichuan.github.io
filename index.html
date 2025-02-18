@@ -90,10 +90,28 @@
 
           </td> -->
 
-          <tr>
-          <td style="padding:2.5%;width:25%;vertical-align:middle">
-            <img style="width:100%;max-width:100%" src="images/MLSys.png" alt="Mlsys" class="hoverZoomLink">
+
+        <tr onmouseout="mlsys_stop()" onmouseover="mlsys_start()">
+          <td style="padding:10pt;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='mlsys_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/MLSys.MOV" type="video/mp4" >
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/MLSys.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function mlsys_start() {
+                document.getElementById('mlsys_image').style.opacity = "1";
+              }
+
+              function mlsys_stop() {
+                document.getElementById('mlsys_image').style.opacity = "0";
+              }
+              mlsys_stop()
+            </script>
           </td>
+
           <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://mlsys.org/Conferences/2025">
               <papertitle>Efficient On-Device Machine Learning with a Biologically-Plausible Forward-Only Algorithm</papertitle>
@@ -111,9 +129,9 @@
             
 
           </td>
-        </tr>
-          
-        <tr>
+      </tr>
+
+        <!-- <tr>
           <td style="padding:2.5%;width:25%;vertical-align:middle">
             <img style="width:100%;max-width:100%" src="images/BinaryFO.png" alt="AOA" class="hoverZoomLink">
           </td>
@@ -136,7 +154,49 @@
             
 
           </td>
-        </tr>
+        </tr> -->
+
+        <tr onmouseout="binaryfo_stop()" onmouseover="binaryfo_start()">
+          <td style="padding:10pt;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='binaryfo_image'><video  style="position: relative; top: -35px; left: -25px; " width=130% height=130% muted autoplay loop>
+              <source src="images/BinaryFO.MOV" type="video/mp4" >
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/BinaryFO.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function binaryfo_start() {
+                document.getElementById('binaryfo_image').style.opacity = "1";
+              }
+
+              function binaryfo_stop() {
+                document.getElementById('binaryfo_image').style.opacity = "0";
+              }
+              binaryfo_stop()
+            </script>
+          </td>
+          <td style="padding:10px;width:75%;vertical-align:middle">
+            <a href="https://ieeexplore.ieee.org/document/10836841">
+              <papertitle>Binary Forward-Only Algorithms</papertitle>
+            </a>
+            <br>
+            <strong>Baichuan Huang</strong>, Amir Aminifar
+            <br>
+            Special Issue on <a href="https://ieee-ceda.org/files/ieeeceda/CFP_DTtinyML.pdf">"tinyML – The ecosystem for next generation ML systems"</a>. 
+            <br> 
+            <em><a href="https://ieee-cas.org/publication/ieee-design-test-magazine">IEEE Design & Test</a></em>, 2025
+            <br> 
+            <a href="https://github.com/whubaichuan/BinaryFO">code</a>
+  
+            <p>
+              We investigate and compare BP and forward-only algorithms in terms of binarization, finding that PEPITA and FF are more vulnerable to binary activations.
+            </p>
+            
+
+          </td>
+      </tr>
+
 
         <tr onmouseout="aaai_stop()" onmouseover="aaai_start()">
           <td style="padding:10pt;width:25%;vertical-align:middle">
