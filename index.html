@@ -90,7 +90,88 @@
 
           </td> -->
 
+          <tr onmouseout="aaai_stop()" onmouseover="aaai_start()">
+            <td style="padding:10pt;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='aaai_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/AAAI.MOV" type="video/mp4" >
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/AAAI.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function aaai_start() {
+                  document.getElementById('aaai_image').style.opacity = "1";
+                }
+  
+                function aaai_stop() {
+                  document.getElementById('aaai_image').style.opacity = "0";
+                }
+                aaai_stop()
+              </script>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+              <a href="https://aaai.org/conference/aaai/aaai-25/">
+                <papertitle>TinyFoA: Memory Efficient Forward-Only Algorithm for On-Device Learning</papertitle>
+              </a>
+              <br>
+              <strong>Baichuan Huang</strong>, Amir Aminifar
+              <br>
+              Accepted by <a href="https://aaai.org/conference/aaai/aaai-25/"><em>AAAI-2025</em></a> (<u>Acceptance Rate: 23.4%</u>)
+              <br>
+              <!-- <a href="data/TinyFoA_Appendix.pdf">appendix</a>/  -->
+              <a href="https://github.com/whubaichuan/TinyFoA">code</a>
+              <p>
+                We propose a memory-efficient forward-only algorithm called TinyFoA, to reduce dynamic memory overhead in the training process. 
+              </p>
+            </td>
+        </tr>
 
+
+
+        <tr onmouseout="binaryfo_stop()" onmouseover="binaryfo_start()">
+          <td style="padding:10pt;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='binaryfo_image'><video  style="position: relative; top: -35px; left: -25px; " width=130% height=130% muted autoplay loop>
+              <source src="images/BinaryFO.MOV" type="video/mp4" >
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/BinaryFO.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function binaryfo_start() {
+                document.getElementById('binaryfo_image').style.opacity = "1";
+              }
+
+              function binaryfo_stop() {
+                document.getElementById('binaryfo_image').style.opacity = "0";
+              }
+              binaryfo_stop()
+            </script>
+          </td>
+          <td style="padding:10px;width:75%;vertical-align:middle">
+            <a href="https://ieeexplore.ieee.org/document/10836841">
+              <papertitle>Binary Forward-Only Algorithms</papertitle>
+            </a>
+            <br>
+            <strong>Baichuan Huang</strong>, Amir Aminifar
+            <br>
+            Special Issue on <a href="https://ieee-ceda.org/files/ieeeceda/CFP_DTtinyML.pdf">"tinyML – The ecosystem for next generation ML systems"</a>. 
+            <br> 
+            <em><a href="https://ieee-cas.org/publication/ieee-design-test-magazine">IEEE Design & Test</a></em>, 2025
+            <br> 
+            <a href="https://github.com/whubaichuan/BinaryFO">code</a>
+  
+            <p>
+              We investigate and compare BP and forward-only algorithms in terms of binarization, finding that PEPITA and FF are more vulnerable to binary activations.
+            </p>
+            
+
+          </td>
+      </tr>
+
+
+      
         <tr onmouseout="mlsys_stop()" onmouseover="mlsys_start()">
           <td style="padding:10pt;width:25%;vertical-align:middle">
             <div class="one">
@@ -111,6 +192,7 @@
               mlsys_stop()
             </script>
           </td>
+
 
           <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://mlsys.org/Conferences/2025">
@@ -156,84 +238,7 @@
           </td>
         </tr> -->
 
-        <tr onmouseout="binaryfo_stop()" onmouseover="binaryfo_start()">
-          <td style="padding:10pt;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='binaryfo_image'><video  style="position: relative; top: -35px; left: -25px; " width=130% height=130% muted autoplay loop>
-              <source src="images/BinaryFO.MOV" type="video/mp4" >
-              Your browser does not support the video tag.
-              </video></div>
-              <img src='images/BinaryFO.png' width="160">
-            </div>
-            <script type="text/javascript">
-              function binaryfo_start() {
-                document.getElementById('binaryfo_image').style.opacity = "1";
-              }
 
-              function binaryfo_stop() {
-                document.getElementById('binaryfo_image').style.opacity = "0";
-              }
-              binaryfo_stop()
-            </script>
-          </td>
-          <td style="padding:10px;width:75%;vertical-align:middle">
-            <a href="https://ieeexplore.ieee.org/document/10836841">
-              <papertitle>Binary Forward-Only Algorithms</papertitle>
-            </a>
-            <br>
-            <strong>Baichuan Huang</strong>, Amir Aminifar
-            <br>
-            Special Issue on <a href="https://ieee-ceda.org/files/ieeeceda/CFP_DTtinyML.pdf">"tinyML – The ecosystem for next generation ML systems"</a>. 
-            <br> 
-            <em><a href="https://ieee-cas.org/publication/ieee-design-test-magazine">IEEE Design & Test</a></em>, 2025
-            <br> 
-            <a href="https://github.com/whubaichuan/BinaryFO">code</a>
-  
-            <p>
-              We investigate and compare BP and forward-only algorithms in terms of binarization, finding that PEPITA and FF are more vulnerable to binary activations.
-            </p>
-            
-
-          </td>
-      </tr>
-
-
-        <tr onmouseout="aaai_stop()" onmouseover="aaai_start()">
-          <td style="padding:10pt;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='aaai_image'><video  width=100% height=100% muted autoplay loop>
-              <source src="images/AAAI.MOV" type="video/mp4" >
-              Your browser does not support the video tag.
-              </video></div>
-              <img src='images/AAAI.png' width="160">
-            </div>
-            <script type="text/javascript">
-              function aaai_start() {
-                document.getElementById('aaai_image').style.opacity = "1";
-              }
-
-              function aaai_stop() {
-                document.getElementById('aaai_image').style.opacity = "0";
-              }
-              aaai_stop()
-            </script>
-          </td>
-          <td style="padding:10px;width:75%;vertical-align:middle">
-            <a href="https://aaai.org/conference/aaai/aaai-25/">
-              <papertitle>TinyFoA: Memory Efficient Forward-Only Algorithm for On-Device Learning</papertitle>
-            </a>
-            <br>
-            <strong>Baichuan Huang</strong>, Amir Aminifar
-            <br>
-            Accepted by <a href="https://aaai.org/conference/aaai/aaai-25/"><em>AAAI-2025</em></a> (<u>Acceptance Rate: 23.4%</u>)
-            <br>
-            <!-- <a href="data/TinyFoA_Appendix.pdf">appendix</a>/  -->
-            <a href="https://github.com/whubaichuan/TinyFoA">code</a>
-            <p>
-              We propose a memory-efficient forward-only algorithm called TinyFoA, to reduce dynamic memory overhead in the training process. 
-            </p>
-          </td>
-      </tr>
 
         <tr onmouseout="tcasai_stop()" onmouseover="tcasai_start()">
           <td style="padding:10pt;width:25%;vertical-align:middle">
