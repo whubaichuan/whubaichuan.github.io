@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-
   <title>Baichuan Huang, Lund University in Sweden (Homepage)</title>
   
   <meta name="author" content="Baichuan Huang (黄百川)">
@@ -9,15 +8,6 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/icon.png">
-
-  <style>
-    .hidden-row {
-        display: none; 
-    }
-
-</style>
-
-
 </head>
 
 <body>
@@ -28,7 +18,12 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="font: 30px/1 Tahoma,Helvetica,Arial,\5b8b\4f53,sans-serif;text-align:center">Baichuan Huang 黄百川</p>
-
+              <!-- <p style="text-align:center">
+                <name>Baichuan Huang</name>
+              </p> -->
+              <!-- <p>
+                I am a Ph.D. student in the <a href="https://www.eit.lth.se/">Department of Electrical and Information Technology</a>, <a href="https://www.lth.se/english/">LTH</a>, at Lund University (Sweden), working with <a href="https://www.eit.lth.se/staff/amir.aminifar">Asst. Prof. Amir Aminifar</a>. I got my master's degree, working with <a href="https://www.linkedin.com/in/jingbin-liu-5b68011b/">Prof. Jingbin Liu</a> in the <a href="http://www.lmars.whu.edu.cn/en">State Key Laboratory of LIESMARS</a> at Wuhan University, China. Before that, I received my bachelor's degree in electronic information engineering from the <a href="http://eis.whu.edu.cn/">Electronic Information School</a> at Wuhan University. My research interests are intelligent perception, The Internet of Things (IoT), mobile health, and edge AI.
+              </p> -->
               <p>
                 I am a Ph.D. student in the <a href="https://www.eit.lth.se/">Department of Electrical and Information Technology</a>, <a href="https://www.lth.se/english/">LTH</a>, at Lund University (Sweden), working with <a href="https://www.eit.lth.se/staff/amir.aminifar">Asst. Prof. Amir Aminifar</a>. My research interests are bio-inspired deep learning, efficient training and inference, The Internet of Things (IoT), and edge AI.
               </p>
@@ -38,6 +33,7 @@
 
               <p style="text-align:center">
                 <a href="mailto:baichuan.huang@eit.lth.se">Email</a> &nbsp/&nbsp
+                <!-- <a href="data/CVH.pdf">CV</a> &nbsp/&nbsp -->
                 <a href="https://github.com/whubaichuan">Github</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?hl=en&user=UkGM5moAAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/baichuanhuang"> LinkedIn </a> 
@@ -52,15 +48,38 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>   
-                (<a href="javascript:void(0);" class="toggle-btn" onclick="showSelectedPapers()">show selected</a> /
-                <a href="javascript:void(0);" class="toggle-btn" onclick="showAllPapers()">show all</a> )
+              <heading>Research</heading>
+              <p>
+              Pulished papers are listed below.
+              </p>
             </td>
           </tr>
         </tbody></table>
-        <table id="papers-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
          
-          <tr class="selected-paper" onmouseout="aaai_stop()" onmouseover="aaai_start()">
+          <!-- <td style="padding:2.5%;width:25%;vertical-align:middle">
+            <img style="width:100%;max-width:100%" src="images/LightFF.png" alt="AOA" class="hoverZoomLink">
+          </td>
+          <td style="padding:10px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2404.05241v6">
+              <papertitle>LightFF: Lightweight Inference for Forward-Forward Algorithm</papertitle>
+            </a>
+            <br>
+            <a href="https://aminaminifar.github.io/info/">Amin Aminifar*</a>, <strong>Baichuan Huang*</strong>, Azra Abtahi, Amir Aminifar (<em>*Equal contribution</em>)
+            <br>
+            Accepted by <a href="https://www.ecai2024.eu/">ECAI-2024</a> (Acceptance Rate: 23%)
+            <br> 
+            <a href="data/2404.05241v6.pdf">paper</a>/ 
+            <a href="https://github.com/AminAminifar/LightFF">code</a>
+  
+            <p>
+            We propose a lightweight inference scheme specifically designed for DNNs trained using the Forward-Forward algorithm ( Contribute to the Forward-Forward <a href="https://github.com/loeweX/Forward-Forward"> repository </a> ).
+            </p>
+            
+
+          </td> -->
+
+          <tr onmouseout="aaai_stop()" onmouseover="aaai_start()">
             <td style="padding:10pt;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='aaai_image'><video  width=100% height=100% muted autoplay loop>
@@ -90,6 +109,7 @@
               Accepted by <a href="https://aaai.org/conference/aaai/aaai-25/"><em>AAAI 2025</em></a> <br> 
               <em>The 39th Annual AAAI Conference on Artificial Intelligence</em> (<u>Acceptance Rate: 23.4%</u>)
               <br>
+              <!-- <a href="data/TinyFoA_Appendix.pdf">appendix</a>/  -->
               <a href="https://github.com/whubaichuan/TinyFoA">code</a>
               <p>
                 We propose a memory-efficient forward-only algorithm called TinyFoA, to reduce dynamic memory overhead in the training process. 
@@ -99,7 +119,7 @@
 
 
 
-        <tr class="hidden-rowr" onmouseout="binaryfo_stop()" onmouseover="binaryfo_start()">
+        <tr onmouseout="binaryfo_stop()" onmouseover="binaryfo_start()">
           <td style="padding:10pt;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id='binaryfo_image'><video  style="position: relative; top: -35px; left: -25px; " width=130% height=130% muted autoplay loop>
@@ -142,7 +162,7 @@
 
 
       
-        <tr class="selected-paper" onmouseout="mlsys_stop()" onmouseover="mlsys_start()">
+        <tr onmouseout="mlsys_stop()" onmouseover="mlsys_start()">
           <td style="padding:10pt;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id='mlsys_image'><video  width=100% height=100% muted autoplay loop>
@@ -184,9 +204,34 @@
           </td>
       </tr>
 
+        <!-- <tr>
+          <td style="padding:2.5%;width:25%;vertical-align:middle">
+            <img style="width:100%;max-width:100%" src="images/BinaryFO.png" alt="AOA" class="hoverZoomLink">
+          </td>
+          <td style="padding:10px;width:75%;vertical-align:middle">
+            <a href="https://ieeexplore.ieee.org/document/10836841">
+              <papertitle>Binary Forward-Only Algorithms</papertitle>
+            </a>
+            <br>
+            <strong>Baichuan Huang</strong>, Amir Aminifar
+            <br>
+            Special Issue on <a href="https://ieee-ceda.org/files/ieeeceda/CFP_DTtinyML.pdf">"tinyML – The ecosystem for next generation ML systems"</a>. 
+            <br> 
+            <em><a href="https://ieee-cas.org/publication/ieee-design-test-magazine">IEEE Design & Test</a></em>, 2025
+            <br> 
+            <a href="https://github.com/whubaichuan/BinaryFO">code</a>
+  
+            <p>
+              We investigate and compare BP and forward-only algorithms in terms of binarization, finding that PEPITA and FF are more vulnerable to binary activations.
+            </p>
+            
+
+          </td>
+        </tr> -->
 
 
-        <tr class="selected-paper" onmouseout="tcasai_stop()" onmouseover="tcasai_start()">
+
+        <tr onmouseout="tcasai_stop()" onmouseover="tcasai_start()">
           <td style="padding:10pt;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id='tcasai_image'><video  width=100% height=100% muted autoplay loop>
@@ -225,7 +270,7 @@
       </tr>
 
 
-          <tr class="selected-paper" onmouseout="ecai_stop()" onmouseover="ecai_start()">
+          <tr onmouseout="ecai_stop()" onmouseover="ecai_start()">
             <td style="padding:10pt;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='ecai_image'><video  width=100% height=100% muted autoplay loop>
@@ -268,7 +313,7 @@
             </td>
         </tr>
 
-          <tr class="hidden-row" onmouseout="aicas_stop()" onmouseover="aicas_start()">
+          <tr onmouseout="aicas_stop()" onmouseover="aicas_start()">
             <td style="padding:10pt;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='aicas_image'><video  width=100% height=100% muted autoplay loop>
@@ -313,7 +358,7 @@
               <iframe width="198" height="111" src="https://www.youtube.com/embed/d-G7psk7L0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </td>
              -->
 
-          <tr class="hidden-row" onmouseout="icassp_stop()" onmouseover="icassp_start()">
+          <tr onmouseout="icassp_stop()" onmouseover="icassp_start()">
               <td style="padding:10pt;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='icassp_image'><video  width=100% height=100% muted autoplay loop>
@@ -356,7 +401,7 @@
         </tr>
 
 
-        <tr class="selected-paper" onmouseout="mvs_stop()" onmouseover="mvs_start()">
+        <tr onmouseout="mvs_stop()" onmouseover="mvs_start()">
           <td style="padding:10pt;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id='mvs_image'><video  width=100% height=100% muted autoplay loop>
@@ -376,6 +421,11 @@
               mvs_stop()
             </script>
           </td>
+
+          <!-- <tr >
+          <td style="padding:10pt;width:25%;vertical-align:middle">
+            <iframe width="198" height="111" src="https://www.youtube.com/embed/9f9OhYYHios" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </td > -->
         
           <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://ieeexplore.ieee.org/document/9506469">
@@ -391,6 +441,7 @@
             <a href="https://github.com/whubaichuan/M3VSNet">code</a>/ 
             <a href="data/MVSNet.pdf">slides</a>/
             <a href="data/poster.pdf"> poster</a>/
+            <!-- <a href="data/attendance.pdf"> attendance</a>/ -->
             <p>
               This method establishes the state-of-the-arts unsupervised MVS method and demonstrates the powerful generalization ability.
             </p>
@@ -399,7 +450,7 @@
       </tr>
 
 
-        <tr class="hidden-row" onmouseout="slam_stop()" onmouseover="slam_start()">
+        <tr onmouseout="slam_stop()" onmouseover="slam_start()">
           <td style="padding:10pt;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id='slam_image'><video  width=100%  height=100% muted autoplay loop>
@@ -438,7 +489,7 @@
               </td>
           </tr>
 
-          <tr class="hidden-row" onmouseout="ble_stop()" onmouseover="ble_start()">
+          <tr onmouseout="ble_stop()" onmouseover="ble_start()">
             <td style="padding:10pt;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='ble_image'><video  width=100% height=100% muted autoplay loop>
@@ -475,8 +526,26 @@
               </td>
           </tr>
 
+          <!-- <tr>
+              <td style="padding:2.5%;width:25%;vertical-align:middle">
+                <img style="width:100%;max-width:100%" src="images/AOA.png" alt="AOA" class="hoverZoomLink">
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="http://ch.whu.edu.cn/CN/abstract/abstract6304.shtml">
+                  <papertitle>AOA Estimation Based on Channel State Information Extracted from WiFi with Double Antenna</papertitle>
+                </a>
+                <br>
+                Jingbin Liu, <strong>Baichuan Huang</strong>, Bin Zhang
+                <br>
+                <em>GEOMATICS AND INFORMATION SCIENCE OF WUHAN UNIVERS</em>, 2018
+                <br>
+                <a href="data/AOA.pdf">paper</a>
+                <p>Jingbin Liu is the supervisor.
+                  </p>
+              </td>
+          </tr> -->
           
-          <tr class="hidden-row" onmouseout="aoa_stop()" onmouseover="aoa_start()">
+          <tr onmouseout="aoa_stop()" onmouseover="aoa_start()">
             <td style="padding:10pt;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='aoa_image'><video  width=100% height=100% muted autoplay loop>
@@ -512,29 +581,26 @@
             </td>
 
           </tr>
+          <!-- <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle">
+              <img style="width:100%;max-width:100%" src="images/Measure.png" alt="Measure" class="hoverZoomLink">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://www.c-s-a.org.cn/csa/ch/reader/view_abstract.aspx?flag=1&file_no=6174&journal_id=csa">
+                <papertitle>Measurement of Size in Three-Dimensional Scene Based on Single Camera</papertitle>
+              </a>
+              <br>
+              <strong>Baichuan Huang</strong>, Xuyi Cai, Chujiang Ding, Han Xu 
+              <br>
+              <em>COMPUTER SYSTEMS APPLICATIONS</em>, 2017
+              <br>
+              <a href="data/Measure.pdf">paper</a> 
+            </td>
+          </tr> -->
 
 
         </tbody></table>
 
-        <script>
-            const papersTable = document.getElementById("papers-table");
-            function showAllPapers() {
-                papersTable.querySelectorAll("tbody tr").forEach(row => {
-                    row.style.display = "table-row"; 
-                });
-            }
-            function showSelectedPapers() {
-                papersTable.querySelectorAll("tbody tr").forEach(row => {
-                    if (row.classList.contains("selected-paper")) {
-                        row.style.display = "table-row"; 
-                    } else {
-                        row.style.display = "none";
-                    }
-                });
-            }
-            document.addEventListener("DOMContentLoaded", showSelectedPapers);
-        </script>
-        
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
@@ -602,6 +668,44 @@
               </td>
             
 
+              <!-- <td style="padding:2.5%;width:20%;vertical-align:top">
+                <p align="center">
+                <a href="images/Tencent.png"><img style="width:60%;max-width:60%" align="center" alt="Tencentloge" src="images/Tencent.png" class="hoverZoomLink"></a>
+                </p>
+                <p align="center">
+                <br>
+                <a href="https://www.tencent.com/en-us">Tencent</a>
+                <br>
+                Research Intern
+                <br>
+                Aug. 2020 ~ Nov. 2020
+                </p>
+                </td> -->
+
+            
+
+            <!-- <td style="padding:2.5%;width:20%;vertical-align:top">
+              <p align="center">
+              <a href="images/MEGVII.png"><img style="width:60%;max-width:60%" alt="MEGVIIlogo" src="images/MEGVII.png" class="hoverZoomLink"></a>
+              </p>
+              <p align="center">
+              <br>
+              <br>
+              <a href="https://en.megvii.com/">MEGVII(Face++)</a>
+              <br>
+              (One of the Top AI Company)
+              <br>
+              <br>
+              Research Intern
+              <br>
+              Dec. 2019 ~ May. 2020
+              <br>
+              </p>
+              </td> -->
+
+
+            
+
             <td style="padding:2.5%;width:20%;vertical-align:top">
                     <p align="center">
               <a href="images/NTU.png"><img style="width:60%;max-width:60%" alt="NTUlogo" src="images/NTU.png" class="hoverZoomLink"></a>
@@ -630,7 +734,59 @@
             </td>
             </tr>
           </tbody></table> 
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Education/Experience</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/MEGVII.png"></td>
+            <td width="75%" valign="center">
+              <strong>MEGVII(Face++)</strong>
+              <br>
+              <br>
+              Research Intern
+              <br>
+              Dec. 2019 ~ Present
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/NTU.png" alt="NTU">
+            </td>
+            <td width="75%" valign="center">
+              <strong>Nanyang Technological University</strong>
+              <br>
+              <br>
+              Research Intern
+              <br>
+              July. 2019 ~ October. 2019
+            </td>
+          </tr>
 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/whu.png" alt="whu">
+            </td>
+            <td width="75%" valign="center">
+              <strong>Wuhan University</strong>
+              <br>
+              <br>
+              M.S. student
+              <br>
+              Sep. 2018 ~ Present
+              <br>
+              <br>
+              B.Eng
+              <br>
+              Sep. 2014 ~ Jun. 2018
+            </td>
+          </tr>
+        
+        </tbody></table> -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
@@ -695,8 +851,8 @@
               <heading>Others</heading>
               <p>
 
-              I like swimming.
-			         
+              I like swimming and running.
+			         <!--I have a WeChat Official Account <a href="images/Wechat.jpg">Baichuan_share</a> and <a href="https://www.zhihu.com/people/huangbaichuanwhu/activities">Zhihu</a> -->
               </p>
             </td>
           </tr>
