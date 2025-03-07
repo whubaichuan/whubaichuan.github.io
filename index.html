@@ -90,7 +90,8 @@
               Accepted by <a href="https://aaai.org/conference/aaai/aaai-25/"> AAAI 2025 </a> <br> 
               <em>The 39th Annual AAAI Conference on Artificial Intelligence</em> (<u>Acceptance Rate: 23.4%</u>)
               <br>
-              <a href="https://github.com/whubaichuan/TinyFoA">code</a>
+              <a href="https://github.com/whubaichuan/TinyFoA">code</a>/
+              <a href="./data/AAA_Poster.pdf">poster</a>
               <p>
                 We propose a memory-efficient forward-only algorithm called TinyFoA, to reduce dynamic memory overhead in the training process. 
               </p>
@@ -126,7 +127,7 @@
             <br>
             <strong>Baichuan Huang</strong>, Amir Aminifar
             <br>
-            Special Issue on <a href="https://ieee-ceda.org/files/ieeeceda/CFP_DTtinyML.pdf">"tinyML – The ecosystem for next generation ML systems"</a>, 2025
+            <u>Special Issue</u> on <a href="https://ieee-ceda.org/files/ieeeceda/CFP_DTtinyML.pdf">"tinyML – The ecosystem for next generation ML systems"</a>, 2025
             <br> 
             <em><a href="https://ieee-cas.org/publication/ieee-design-test-magazine">IEEE Design & Test</a></em>
             <br> 
@@ -262,7 +263,7 @@
               <a href="./data/ECAI_Poster.pdf">poster</a>
     
               <p>
-              We propose a lightweight inference scheme specifically designed for DNNs trained using the Forward-Forward algorithm ( Contribute to the Forward-Forward <a href="https://github.com/loeweX/Forward-Forward"> repository </a> ).
+              We propose a lightweight inference scheme specifically designed for DNNs trained using the Forward-Forward algorithm ( Contributor to the Forward-Forward <a href="https://github.com/loeweX/Forward-Forward"> repository </a>  <u><strong><span id="star-count-ecai">...</span> </u>⭐</strong> ).
               </p>
               
             </td>
@@ -388,7 +389,7 @@
             <em>IEEE International Conference on Image Processing</em>
             <br> 
             <a href="data/M3VSNet.pdf">paper</a>/
-            <a href="https://github.com/whubaichuan/M3VSNet">code</a>/ 
+            <a href="https://github.com/whubaichuan/M3VSNet">code</a> (<u><strong><span id="star-count-icip">...</span> </u>⭐</strong>) / 
             <a href="data/MVSNet.pdf">slides</a>/
             <a href="data/poster.pdf"> poster</a>/
             <p>
@@ -431,7 +432,7 @@
                 <br>
                 <a href="data/JoGPS_v17n1p94-127.pdf">paper</a>/
                 <a href="https://github.com/whubaichuan/A_Survey_of_SLAM">project</a>/
-                <a href="data/JoGPS_citation.txt">cite</a>
+                <a href="data/JoGPS_citation.txt">cite</a> 
                 <p>
                   The paper makes an overview in SLAM including Lidar SLAM, visual SLAM, and their fusion. 
                 </p>
@@ -533,6 +534,42 @@
                 });
             }
             document.addEventListener("DOMContentLoaded", showSelectedPapers);
+            
+            async function fetchICIPStarCount() {
+            const owner = "whubaichuan"; // Replace with your GitHub username
+            const repo = "M3VSNet"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-icip").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
+        async function fetchECAIStarCount() {
+            const owner = "loeweX"; // Replace with your GitHub username
+            const repo = "Forward-Forward"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-ecai").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
+        // Fetch star count on page load
+        fetchICIPStarCount();
+        fetchECAIStarCount();
         </script>
         
 
