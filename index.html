@@ -91,7 +91,7 @@
               <em>The 39th Annual AAAI Conference on Artificial Intelligence</em> (<u>Acceptance Rate: 23.4%</u>)
               <br>
               <a href="data/TinyFoA.pdf">paper</a>/ 
-              <a href="https://github.com/whubaichuan/TinyFoA">code</a>/
+              <a href="https://github.com/whubaichuan/TinyFoA">code</a> (<u><strong><span id="star-count-tinyfoa">...</span> </u>⭐</strong>)/
               <a href="./data/AAAI_Poster.pdf">poster</a>
               <p>
                 We propose a memory-efficient forward-only algorithm called TinyFoA, to reduce dynamic memory overhead in the training process. 
@@ -264,12 +264,12 @@
               <em>The 27th European Conference on Artificial Intelligence</em> (<u>Acceptance Rate: 23%</u>)
               <br> 
               <a href="data/ECAI.pdf">paper</a>/ 
-              <a href="https://github.com/AminAminifar/LightFF">code</a>/
+              <a href="https://github.com/AminAminifar/LightFF">code</a> /
               <a href="./data/ECAI_Presentation.pdf">slides</a>/
               <a href="./data/ECAI_Poster.pdf">poster</a>
     
               <p>
-              We propose a lightweight inference scheme specifically designed for DNNs trained using the Forward-Forward algorithm ( Contributor to the Forward-Forward <a href="https://github.com/loeweX/Forward-Forward"> repository </a>  <u><strong><span id="star-count-ecai">...</span> </u>⭐</strong> ).
+              We propose a lightweight inference scheme specifically designed for DNNs trained using the Forward-Forward algorithm ( Contributor to the Forward-Forward <a href="https://github.com/loeweX/Forward-Forward"> repository </a>  <u><strong><span id="star-count-ff">...</span> </u>⭐</strong> ).
               </p>
               
             </td>
@@ -437,7 +437,7 @@
                 <em>Journal of Global Positioning Systems </em>, 2021
                 <br>
                 <a href="data/JoGPS_v17n1p94-127.pdf">paper</a>/
-                <a href="https://github.com/whubaichuan/A_Survey_of_SLAM">project</a>/
+                <a href="https://github.com/whubaichuan/A_Survey_of_SLAM">project</a> (<u><strong><span id="star-count-surveyslam">...</span> </u>⭐</strong>)/
                 <a href="data/JoGPS_citation.txt">cite</a> 
                 <p>
                   The paper makes an overview in SLAM including Lidar SLAM, visual SLAM, and their fusion. 
@@ -557,9 +557,26 @@
             }
         }
 
-        async function fetchECAIStarCount() {
+        async function fetchFFStarCount() {
             const owner = "loeweX"; // Replace with your GitHub username
             const repo = "Forward-Forward"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-ff").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
+
+        async function fetchECAIStarCount() {
+            const owner = "AminAminifar"; // Replace with your GitHub username
+            const repo = "LightFF"; // Replace with your repository name
             const url = `https://api.github.com/repos/${owner}/${repo}`;
 
             try {
@@ -573,9 +590,60 @@
             }
         }
 
+        async function fetchtinyfoaStarCount() {
+            const owner = "whubaichuan"; // Replace with your GitHub username
+            const repo = "TinyFoA"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-tinyfoa").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
+        async function fetchsurveyslamCount() {
+            const owner = "whubaichuan"; // Replace with your GitHub username
+            const repo = "A_Survey_of_SLAM"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-surveyslam").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
+        async function fetchbinaryfoCount() {
+            const owner = "whubaichuan"; // Replace with your GitHub username
+            const repo = "A_Survey_of_SLAM"; // Replace with your repository name
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                document.getElementById("star-count-surveyslam").textContent = data.stargazers_count;
+            } catch (error) {
+                console.error("Error fetching star count:", error);
+            }
+        }
+
         // Fetch star count on page load
         fetchICIPStarCount();
+        fetchFFStarCount();
         fetchECAIStarCount();
+        fetchtinyfoaStarCount();
+        fetchsurveyslamCount();
         </script>
         
 
