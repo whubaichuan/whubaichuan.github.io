@@ -60,9 +60,25 @@
         </tbody></table>
         <table id="papers-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr class="selected-paper">
+          <tr class="selected-paper" onmouseout="beft_stop()" onmouseover="beft_start()">
             <td style="padding:10pt;width:25%;vertical-align:middle">
-              <img style="width:100%;max-width:100%" src="images/BEFT.png" alt="BEFT" class="hoverZoomLink">
+              <div class="one">
+                <div class="two" id='beft_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/BEFT.MOV" type="video/mp4" >
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/BEFT.png' width="160" style="margin-top:20px;">
+              </div>
+              <script type="text/javascript">
+                function beft_start() {
+                  document.getElementById('beft_image').style.opacity = "1";
+                }
+  
+                function beft_stop() {
+                  document.getElementById('beft_image').style.opacity = "0";
+                }
+                beft_stop()
+              </script>
             </td>
             <td style="padding:10px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2509.15974">
@@ -74,7 +90,7 @@
               <br>
               <!-- <em>FiT-LLM: Efficient Fine-Tuning of Large Language Models (Amir Aminifar, Lund University)</em> -->
               <p>
-                We propose an approach for selecting the bias term in LLMs to be fine-tuned, forming the foundation of our bias-efficient fine-tuning (BEFT). 
+                In this paper, we investigate the link between fine-tuning <b>b</b><sub>q</sub>, <b>b</b><sub>k</sub>, and <b>b</b><sub>v</sub> with downstream performance. We find that fine-tuning <b>b</b><sub>v</sub> in low-data regimes is sufficient; <b>b</b><sub>k</sub> has no effect on improved expressiveness, whereas <b>b</b><sub>q</sub> has a limited effect.
               </p>
             </td>
           </tr>
@@ -255,11 +271,10 @@
           </td>
       </tr>
 
-
           <tr class="selected-paper" onmouseout="ecai_stop()" onmouseover="ecai_start()">
             <td style="padding:10pt;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='ecai_image'><video  width=100% height=100% muted autoplay loop>
+                <div class="two" id='ecai_image'><video  width=100% height=100% muted autoplay loop style="margin-top: -20px;">
                 <source src="images/LightFF.MOV" type="video/mp4" >
                 Your browser does not support the video tag.
                 </video></div>
