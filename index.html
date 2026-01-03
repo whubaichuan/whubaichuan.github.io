@@ -60,6 +60,40 @@
         </tbody></table>
         <table id="papers-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr class="selected-paper" onmouseout="bpfreesurvey_stop()" onmouseover="bpfreesurvey_start()">
+            <td style="padding:10pt;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bpfreesurvey_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/bp_free_survey.MOV" type="video/mp4" >
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/bp_free_survey.png' width="160" style="margin-top:20px;">
+              </div>
+              <script type="text/javascript">
+                function bpfreesurvey_start() {
+                  document.getElementById('bpfreesurvey_image').style.opacity = "1";
+                }
+  
+                function bpfreesurvey_stop() {
+                  document.getElementById('bpfreesurvey_image').style.opacity = "0";
+                }
+                bpfreesurvey_stop()
+              </script>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+              <a href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.176739859.93468234/v1">
+                <papertitle>Backpropagation-Free Learning: On the Emergence of Forward-Only Algorithms</papertitle>
+              </a>
+              <br>
+              <strong>Baichuan Huang</strong>, <a href="https://www.cs.rit.edu/~ago/">Alexander Ororbia</a>, Amir Aminifar <br>
+              <a href="data/BPFreeSurvey.pdf">paper</a>
+
+              <p>
+                This survey paper provides a comprehensive overview to foster progress in BP-free learning in the context of emerging forward-only adaptation.
+              </p>
+            </td>
+          </tr>
+
           <tr class="selected-paper" onmouseout="beft_stop()" onmouseover="beft_start()">
             <td style="padding:10pt;width:25%;vertical-align:middle">
               <div class="one">
