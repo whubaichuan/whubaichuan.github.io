@@ -1,1 +1,9 @@
-Huang B, Zhao J, Luo S, et al. A Survey of Simultaneous Localization and Mapping with an Envision in 6G Wireless Networks[J]. The Journal of Global Positioning Systems, 2021, 17(1): 94-127.
+@article{huang2021survey,
+  title={A Survey of Simultaneous Localization and Mapping with an Envision in 6G Wireless Networks},
+  author={Huang, Baichuan and Zhao, Jun and Luo, Sheng and Liu, Jingbin},
+  journal={Journal of Global Positioning Systems},
+  volume={17},
+  number={2},
+  pages={206--236},
+  year={2021}
+}

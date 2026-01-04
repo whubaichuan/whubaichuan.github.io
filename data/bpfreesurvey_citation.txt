@@ -1,0 +1,8 @@
+ @article{Huang_2026,
+title={Backpropagation-Free Learning: On the Emergence of Forward-Only Algorithms},
+url={http://dx.doi.org/10.36227/techrxiv.176739859.93468234/v1},
+DOI={10.36227/techrxiv.176739859.93468234/v1},
+publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+author={Huang, Baichuan and Ororbia, Alexander and Aminifar, Amir},
+year={2026},
+month=jan }
