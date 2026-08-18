@@ -103,7 +103,8 @@
               <text
                 x="425"
                 y="405"
-                class="timeline-category blue-text"
+                class="timeline-category blue-text category-trigger"
+                data-category="llm-adaptation"
               >
                 LLM Adaptation
               </text>
@@ -115,6 +116,7 @@
 
               <g
                 class="timeline-node"
+                data-category="llm-adaptation"
                 data-title="BEFT: Bias-Efficient Fine-Tuning of Language Models in Low-Data Regimes"
                 data-venue="The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026-Main)"
                 data-description="Baichuan Huang, Ananth Balashankar, Amir Aminifar"
@@ -165,7 +167,8 @@
               <text
                 x="100"
                 y="108"
-                class="timeline-category orange-text"
+                class="timeline-category orange-text category-trigger"
+                data-category="forward-only"
               >
                 Forward-Only Learning
               </text>
@@ -177,6 +180,7 @@
 
               <g
                 class="timeline-node"
+                data-category="forward-only"
                 data-title="LightFF: Lightweight Inference for Forward-Forward Algorithm"
                 data-venue="The 27th European Conference on Artificial Intelligence (ECAI 2024)"
                 data-description="Amin Aminifar†, Baichuan Huang†, Azra Abtahi, Amir Aminifar (†equal contribution)"
@@ -218,6 +222,7 @@
 
               <g
                 class="timeline-node"
+                data-category="forward-only"
                 data-title="Efficient On-Device Machine Learning with a Biologically-Plausible Forward-Only Algorithm"
                 data-venue="The Eighth Annual Conference on Machine Learning and Systems (MLSys 2025)"
                 data-description="Baichuan Huang, Amir Aminifar"
@@ -259,6 +264,7 @@
 
               <g
                 class="timeline-node"
+                data-category="forward-only"
                 data-title="TinyFoA: Memory Efficient Forward-Only Algorithm for On-Device Learning"
                 data-venue="The 39th Annual AAAI Conference on Artificial Intelligence (AAAI 2025)"
                 data-description="Baichuan Huang, Amir Aminifar"
@@ -321,7 +327,8 @@
               <text
                 x="30"
                 y="258"
-                class="timeline-category green-text"
+                class="timeline-category green-text category-trigger"
+                data-category="bp-free"
               >
                 BP-Free Learning
               </text>
@@ -333,6 +340,7 @@
 
               <g
                 class="timeline-node"
+                data-category="bp-free"
                 data-title="Energy-Aware Integrated Neural Architecture Search and Partitioning for Distributed Internet of Things (IoT)"
                 data-venue="IEEE Transactions on Circuits and Systems for Artificial Intelligence (TCASAI 2024)"
                 data-description="Baichuan Huang, Azra Abtahi, Amir Aminifar"
@@ -374,6 +382,7 @@
 
               <g
                 class="timeline-node"
+                data-category="bp-free forward-only"
                 data-title="Backpropagation-Free Learning: On the Emergence of Forward-Only Algorithms"
                 data-venue="TechRxiv DOI: 10.36227/techrxiv.176739859.93468234/v11"
                 data-description="Baichuan Huang, Alexander Ororbia, Amir Aminifar"
@@ -419,6 +428,7 @@
                 data-venue="submitted to NeurIPS 2026"
                 data-description="Baichuan Huang, Ananth Balashankar, Amir Aminifar"
                 data-link="#"
+                data-category="forward-only bp-free llm-adaptation"
               >
 
                 <line
@@ -898,8 +908,7 @@
         .tooltip-link:hover {
           text-decoration: underline;
         }
-
-
+        
         /* ============================================================
           Mobile
           ============================================================ */
@@ -932,6 +941,67 @@
 
         }
 
+        /* ============================================================
+          Research category highlight
+          ============================================================ */
+
+        .timeline-node {
+          transition: opacity 0.2s ease;
+        }
+
+        /* 激活某个 category 时，所有 category 文字先变淡 */
+        .category-active .category-trigger {
+          opacity: 0.2;
+        }
+
+        /* 当前被激活的 category 保持正常 */
+        .category-active .category-trigger.category-highlight {
+          opacity: 1;
+        }
+
+        /* 当某个 research direction 被激活时，
+          默认让所有 Paper 变淡 */
+
+        .category-active .timeline-node {
+          opacity: 0.2;
+        }
+
+
+        /* 属于当前 direction 的 Paper 保持高亮 */
+
+        .category-active .timeline-node.category-highlight {
+          opacity: 1;
+        }
+
+
+        /* 高亮 Paper 的文字 */
+
+        .category-active .timeline-node.category-highlight .paper-label {
+          fill: #111111;
+          font-size: 24px;
+        }
+
+        /* 高亮 Paper 的 venue */
+
+        .category-active .timeline-node.category-highlight .venue-label {
+          fill: #111111;
+        }
+
+
+        /* 高亮 Paper 的连接线 */
+
+        .category-active .timeline-node.category-highlight .paper-stem {
+          stroke-width: 9;
+        }
+
+
+        /* 高亮 Paper 的节点 */
+
+        .category-active .timeline-node.category-highlight circle {
+          fill: #111111;
+          stroke: #111111;
+          stroke-width: 3;
+        }
         </style>
 
 
@@ -1116,8 +1186,115 @@
             }
           );
 
+        /* ============================================================
+          Research category interaction
+          ============================================================ */
+
+        const categoryTriggers =
+          document.querySelectorAll(
+            ".category-trigger"
+          );
+
+
+        const paperNodes =
+          document.querySelectorAll(
+            ".timeline-node"
+          );
+
+
+        function highlightCategory(category) {
+
+          timeline.classList.add(
+            "category-active"
+          );
+
+
+          paperNodes.forEach(function (paper) {
+
+            const categories =
+              (paper.getAttribute("data-category") || "")
+                .split(" ");
+
+            if (
+              categories.includes(category)
+            ) {
+
+              paper.classList.add(
+                "category-highlight"
+              );
+
+            } else {
+
+              paper.classList.remove(
+                "category-highlight"
+              );
+
+            }
+
+          });
+
+        }
+
+
+        function clearCategory() {
+
+          timeline.classList.remove(
+            "category-active"
+          );
+
+
+          paperNodes.forEach(function (paper) {
+
+            paper.classList.remove(
+              "category-highlight"
+            );
+
+          });
+
+        }
+
+
+        /* Category hover */
+
+        categoryTriggers.forEach(function (trigger) {
+
+          const category =
+            trigger.getAttribute(
+              "data-category"
+            );
+
+
+          trigger.addEventListener(
+            "mouseenter",
+            function () {
+
+              highlightCategory(category);
+
+              trigger.classList.add(
+                "category-highlight"
+              );
+
+            }
+          );
+
+
+          trigger.addEventListener(
+            "mouseleave",
+            function () {
+
+              clearCategory();
+              trigger.classList.remove(
+                "category-highlight"
+              );
+
+            }
+          );
+
         });
 
+        });
+
+        
         </script>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
