@@ -424,8 +424,8 @@
 
               <g
                 class="timeline-node"
-                data-title="Foward-Only Adaptation"
-                data-venue="submitted"
+                data-title="Efficient LLM Adaptation with Forward-Only Passes"
+                data-venue="The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026)"
                 data-description="Baichuan Huang, Ananth Balashankar, Amir Aminifar"
                 data-link="#"
                 data-category="forward-only bp-free llm-adaptation"
@@ -446,7 +446,15 @@
                   y="195"
                   class="paper-label"
                 >
-                  FO-Adaptation
+                  FO-Adapt-LLM
+                </text>
+                
+                <text
+                  x="760"
+                  y="255"
+                  class="venue-label italic"
+                >
+                  NeurIPS
                 </text>
 
               </g>
@@ -1307,6 +1315,54 @@
           </tr>
         </tbody></table>
         <table id="papers-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          <tr class="selected-paper" onmouseout="neurips_stop()" onmouseover="neurips_start()">
+            <td style="padding:10pt;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='neurips_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/NeurIPS.MOV" type="video/mp4" >
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/NeurIPS.png' width="160" style="margin-top:20px;">
+              </div>
+              <script type="text/javascript">
+                function neurips_start() {
+                  document.getElementById('neurips_image').style.opacity = "1";
+                }
+
+                function neurips_stop() {
+                  document.getElementById('neurips_image').style.opacity = "0";
+                }
+                neurips_stop()
+              </script>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+              <a href="https://neurips.cc/Conferences/2026">
+                <papertitle>Efficient LLM Adaptation with Forward-Only Passes</papertitle>
+              </a>
+              <br>
+              <strong>Baichuan Huang</strong>, <a href="https://ananthbalashankar.github.io/">Ananth Balashankar</a>, Amir Aminifar <br>
+              Accepted to <a href="https://neurips.cc/Conferences/2026"> NeurIPS 2026 </a> <br> 
+              <em>The Fortieth Annual Conference on Neural Information Processing Systems</em> (<u>Acceptance Rate: xx%</u>)
+              <br>
+              <a align="center">
+                <img src="./images/neurips_icon.png" width="30" style="position: relative; top: 2px; margin-right: 0px; margin-left: -3px;">
+              </a>/
+              <!-- <a href="https://neurips.cc/Conferences/2026" target="_blank" style="  background:#995b0b; color:white; font-weight:100; border-radius:4px; text-decoration:none;display: inline-block; ">Spotlight</a>/ -->
+              <a href="https://research.google/programs-and-events/research-scholar-program/recipients/#:~:text=Amir%20Aminifar%2C%20Lund%20University%0AFiT%2DLLM%3A%20Efficient%20Fine%2DTuning%20of%20Large%20Language%20Models">Google Research Scholar Program 2025</a>/ <br>
+              <!-- <a href="data/BEFT.pdf">paper</a>/
+              <a href="https://github.com/whubaichuan/BEFT">code</a>/
+              <a href="./data/BEFT_Slides.pdf">slides</a>/
+              <a href="./data/BEFT_poster.pdf">poster</a>/
+              <a href="https://mp.weixin.qq.com/s/TvN7r0ejiEX5SAJQRsBs9w">Featured by QbitAI (量子位)</a>  
+              <br> -->
+              <p>
+                Large language model (LLM) inference serving is undergoing rapid growth and large-scale deployment, motivating us to rethink how the inference process itself can be leveraged to enable efficient task-specific LLM adaptation.
+              </p>
+            </td>
+          </tr>
+
 
           <tr class="selected-paper" onmouseout="bpfreesurvey_stop()" onmouseover="bpfreesurvey_start()">
             <td style="padding:10pt;width:25%;vertical-align:middle">
